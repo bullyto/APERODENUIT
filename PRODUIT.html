@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte des Produits</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        .category-link.active {
+            color: #D4AF37;
+            border-bottom: 2px solid #D4AF37;
+        }
+        .product-item:hover {
+            transform: translateX(5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#D4AF37',secondary:'#2A2A2A'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+</head>
+<body class="bg-black text-white min-h-screen scroll-smooth">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-black border-b border-primary/30 z-50 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <h1 class="text-primary font-['Pacifico'] text-2xl">logo</h1>
+                <div class="overflow-x-auto whitespace-nowrap pb-2 hide-scrollbar">
+                    <div class="flex space-x-6">
+                        <a href="#snacks" class="category-link text-white hover:text-primary transition-colors duration-300 text-sm">Snacks</a>
+                        <a href="#vodka" class="category-link text-white hover:text-primary transition-colors duration-300 text-sm">Vodka</a>
+                        <a href="#whisky" class="category-link text-white hover:text-primary transition-colors duration-300 text-sm">Whisky</a>
+                        <a href="#rhum" class="category-link text-white hover:text-primary transition-colors duration-300 text-sm">Rhum</a>
+                        <a href="#liqueur" class="category-link text-white hover:text-primary transition-colors duration-300 text-sm">Liqueur</a>
+                        <a href="#gin" class="category-link text-white hover:text-primary transition-colors duration-300 text-sm">Gin</a>
+                        <a href="#softs" class="category-link text-white hover:text-primary transition-colors duration-300 text-sm">Softs & Jus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-24 pb-12">
+        <!-- Snacks Section -->
+        <section id="snacks" class="mb-16">
+            <div class="bg-secondary/50 rounded-lg p-6 shadow-lg border border-primary/10">
+                <h2 class="text-primary font-['Pacifico'] text-3xl mb-6 border-b border-primary/30 pb-2">Snacks</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>HARIBO Dragibus</span>
+                            <span class="text-primary font-medium">2,50 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>HARIBO Tagada</span>
+                            <span class="text-primary font-medium">2,50 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>Cacahuètes grillées</span>
+                            <span class="text-primary font-medium">2,50 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>Chips à l'ancienne nature</span>
+                            <span class="text-primary font-medium">2,50 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>Bretzel ancel</span>
+                            <span class="text-primary font-medium">2,50 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>Curly</span>
+                            <span class="text-primary font-medium">2,50 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>MONSTER MUNCH</span>
+                            <span class="text-primary font-medium">2,50 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vodka Section -->
+        <section id="vodka" class="mb-16">
+            <div class="bg-secondary/50 rounded-lg p-6 shadow-lg border border-primary/10">
+                <h2 class="text-primary font-['Pacifico'] text-3xl mb-6 border-b border-primary/30 pb-2">Vodka (70 cl)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Poliakov</span>
+                                <span class="text-gray-400 text-sm ml-2">37,5%</span>
+                            </div>
+                            <span class="text-primary font-medium">29,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Absolut Vodka</span>
+                                <span class="text-gray-400 text-sm ml-2">40%</span>
+                            </div>
+                            <span class="text-primary font-medium">34,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>CIROC Classic</span>
+                                <span class="text-gray-400 text-sm ml-2">40%</span>
+                            </div>
+                            <span class="text-primary font-medium">49,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>CIROC Red Berry</span>
+                                <span class="text-gray-400 text-sm ml-2">35%</span>
+                            </div>
+                            <span class="text-primary font-medium">49,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>CIROC Pomme</span>
+                                <span class="text-gray-400 text-sm ml-2">37,5%</span>
+                            </div>
+                            <span class="text-primary font-medium">49,00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Whisky Section -->
+        <section id="whisky" class="mb-16">
+            <div class="bg-secondary/50 rounded-lg p-6 shadow-lg border border-primary/10">
+                <h2 class="text-primary font-['Pacifico'] text-3xl mb-6 border-b border-primary/30 pb-2">Whisky (70 cl)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>William Peel</span>
+                                <span class="text-gray-400 text-sm ml-2">40%</span>
+                            </div>
+                            <span class="text-primary font-medium">29,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>LABEL 5</span>
+                                <span class="text-gray-400 text-sm ml-2">40%</span>
+                            </div>
+                            <span class="text-primary font-medium">32,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Ballantine's Finest</span>
+                                <span class="text-gray-400 text-sm ml-2">40%</span>
+                            </div>
+                            <span class="text-primary font-medium">36,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Jack Daniel's</span>
+                                <span class="text-gray-400 text-sm ml-2">40%</span>
+                            </div>
+                            <span class="text-primary font-medium">40,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Jack Daniel's Honey</span>
+                                <span class="text-gray-400 text-sm ml-2">35%</span>
+                            </div>
+                            <span class="text-primary font-medium">42,00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rhum Section -->
+        <section id="rhum" class="mb-16">
+            <div class="bg-secondary/50 rounded-lg p-6 shadow-lg border border-primary/10">
+                <h2 class="text-primary font-['Pacifico'] text-3xl mb-6 border-b border-primary/30 pb-2">Rhum (70 cl)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Captain Morgan</span>
+                                <span class="text-gray-400 text-sm ml-2">35%</span>
+                            </div>
+                            <span class="text-primary font-medium">34,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Havana Club</span>
+                                <span class="text-gray-400 text-sm ml-2">40%</span>
+                            </div>
+                            <span class="text-primary font-medium">38,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Saint James Rhum blanc</span>
+                                <span class="text-gray-400 text-sm ml-2">56,5%</span>
+                            </div>
+                            <span class="text-primary font-medium">32,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Trois Rivières</span>
+                                <span class="text-gray-400 text-sm ml-2">40%</span>
+                            </div>
+                            <span class="text-primary font-medium">33,00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Liqueur Section -->
+        <section id="liqueur" class="mb-16">
+            <div class="bg-secondary/50 rounded-lg p-6 shadow-lg border border-primary/10">
+                <h2 class="text-primary font-['Pacifico'] text-3xl mb-6 border-b border-primary/30 pb-2">Liqueur (70 cl)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>GET 27</span>
+                                <span class="text-gray-400 text-sm ml-2">17,9%</span>
+                            </div>
+                            <span class="text-primary font-medium">32,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>JagerMeister</span>
+                                <span class="text-gray-400 text-sm ml-2">35%</span>
+                            </div>
+                            <span class="text-primary font-medium">35,00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gin Section -->
+        <section id="gin" class="mb-16">
+            <div class="bg-secondary/50 rounded-lg p-6 shadow-lg border border-primary/10">
+                <h2 class="text-primary font-['Pacifico'] text-3xl mb-6 border-b border-primary/30 pb-2">Gin (70 cl)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Gordon's</span>
+                                <span class="text-gray-400 text-sm ml-2">40%</span>
+                            </div>
+                            <span class="text-primary font-medium">34,00 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span>Gibson's</span>
+                                <span class="text-gray-400 text-sm ml-2">40%</span>
+                            </div>
+                            <span class="text-primary font-medium">34,00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Softs & Jus Section -->
+        <section id="softs" class="mb-16">
+            <div class="bg-secondary/50 rounded-lg p-6 shadow-lg border border-primary/10">
+                <h2 class="text-primary font-['Pacifico'] text-3xl mb-6 border-b border-primary/30 pb-2">Softs & Jus</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>1l Jus de pommes</span>
+                            <span class="text-primary font-medium">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>1l Jus de pamplemousse</span>
+                            <span class="text-primary font-medium">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>1l Jus d'oranges</span>
+                            <span class="text-primary font-medium">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>1l Jus d'ananas</span>
+                            <span class="text-primary font-medium">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="product-item p-3 hover:bg-secondary/80 rounded transition-all duration-300">
+                        <div class="flex justify-between items-center">
+                            <span>1l Crazy tiger</span>
+                            <span class="text-primary font-medium">5,00 €</span>
+                        </div>

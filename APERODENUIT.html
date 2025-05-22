@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apéro de Nuit 66 - Livraison d'alcool nocturne à Perpignan</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#D4AF37',secondary:'#2A2A2A'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+.font-pacifico {
+font-family: 'Pacifico', cursive;
+}
+.glassmorphism {
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
+}
+</style>
+</head>
+<body class="bg-black text-white">
+<!-- Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 glassmorphism bg-black/80 shadow-lg">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="text-primary font-['Pacifico'] text-xl">Apéro de Nuit 66</div>
+<button class="w-8 h-8 flex items-center justify-center text-white">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-16 min-h-screen flex flex-col justify-center items-center text-center px-4 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Elegant%20night%20cityscape%20of%20Perpignan%2C%20France%2C%20with%20soft%20city%20lights%2C%20dark%20blue%20night%20sky%2C%20atmospheric%20and%20moody%2C%20perfect%20for%20a%20premium%20alcohol%20delivery%20service%20background%2C%20professional%20photography%2C%20high%20resolution%2C%20cinematic%20lighting&width=375&height=500&seq=1&orientation=portrait');">
+<div class="absolute inset-0 bg-black/70"></div>
+<div class="relative z-10 max-w-md mx-auto">
+<h1 class="font-['Pacifico'] text-primary text-5xl mb-4">APERO 66</h1>
+<p class="text-white text-xl mb-4">Livraison d'alcool la nuit</p>
+<p class="text-gray-300 mb-6">Ouvert tous les soirs, 19h-6h</p>
+<p class="text-gray-300 mb-8">Perpignan et environs (30 km)</p>
+<a href="tel:+33652336461" class="bg-primary text-black font-bold py-3 px-8 rounded-button inline-flex items-center space-x-2 shadow-lg hover:bg-primary/90 transition-all">
+<i class="ri-phone-fill ri-lg"></i>
+<span>Appelez-nous</span>
+</a>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-16 px-4 bg-secondary">
+<div class="container mx-auto max-w-lg">
+<h2 class="font-['Pacifico'] text-primary text-3xl text-center mb-10">Nos Services</h2>
+<div class="grid grid-cols-2 gap-6 mb-12">
+<a href="http://www.aperodenuit.com" class="bg-black/50 p-6 rounded-lg text-center hover:bg-black/60 transition-all">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+<i class="ri-wine-fill ri-3x text-primary"></i>
+</div>
+<h3 class="text-white font-semibold mb-2">Boissons</h3>
+<p class="text-gray-300 text-sm"> spiritueux et softs à prix abordables</p>
+</a>
+<a href="tel:+33652336461" class="bg-black/50 p-6 rounded-lg text-center hover:bg-black/60 transition-all">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+<i class="ri-phone-fill ri-3x text-primary"></i>
+</div>
+<h3 class="text-white font-semibold mb-2">Commande</h3>
+<p class="text-gray-300 text-sm">Simple et rapide par téléphone, 7j/7</p>
+</a>
+</div>
+<h3 class="text-white text-xl text-center mb-6">Comment ça marche ?</h3>
+<div class="grid grid-cols-1 gap-4">
+<div class="bg-black/30 p-4 rounded-lg flex items-start">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-black font-bold mr-4 flex-shrink-0">1</div>
+<div>
+<h4 class="font-semibold mb-1">Appelez-nous</h4>
+<p class="text-gray-300 text-sm">Un simple appel pour passer votre commande</p>
+</div>
+</div>
+<div class="bg-black/30 p-4 rounded-lg flex items-start">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-black font-bold mr-4 flex-shrink-0">2</div>
+<div>
+<h4 class="font-semibold mb-1">Commande minimum</h4>
+<p class="text-gray-300 text-sm">25€ minimum pour la livraison</p>
+</div>
+</div>
+<div class="bg-black/30 p-4 rounded-lg flex items-start">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-black font-bold mr-4 flex-shrink-0">3</div>
+<div>
+<h4 class="font-semibold mb-1">Paiement</h4>
+<p class="text-gray-300 text-sm">Carte bancaire ou espèces à la livraison</p>
+</div>
+</div>
+<div class="bg-black/30 p-4 rounded-lg flex items-start">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-black font-bold mr-4 flex-shrink-0">4</div>
+<div>
+<h4 class="font-semibold mb-1">Livraison rapide</h4>
+<p class="text-gray-300 text-sm">Moins de 30 minutes dans la zone de livraison</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Delivery Section -->
+<section id="delivery" class="py-16 px-4 bg-black">
+<div class="container mx-auto max-w-lg">
+<h2 class="font-['Pacifico'] text-primary text-3xl text-center mb-10">Informations de Livraison</h2>
+<div class="bg-secondary/50 p-6 rounded-lg mb-8">
+<h3 class="font-semibold text-xl mb-4 text-center">Conditions</h3>
+<ul class="space-y-3 text-gray-300">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span>Commande minimum de 25€</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span>Paiement par carte ou espèces</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span>Livraison en moins de 30 minutes</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span>Vérification d'âge obligatoire (18+)</span>
+</li>
+</ul>
+</div>
+<h3 class="font-semibold text-xl mb-4 text-center">Zone de livraison</h3>
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1kQ9bc3bTA2H6IErx1fna1yBW1hp-j5Hz&ehbc=2E312F" width="350" height="290"></iframe>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-16 px-4 bg-secondary">
+<div class="container mx-auto max-w-lg text-center">
+<h2 class="font-['Pacifico'] text-primary text-3xl mb-8">Contactez-nous</h2>
+<div class="bg-black/30 p-8 rounded-lg mb-6">
+<p class="text-gray-300 mb-6">Pour passer commande ou pour toute information</p>
+<a href="tel:+33652336461" class="bg-primary text-black font-bold py-4 px-8 rounded-button inline-flex items-center space-x-3 shadow-lg hover:bg-primary/90 transition-all">
+<i class="ri-phone-fill ri-lg"></i>
+<span>06 52 33 64 61</span>
+</a>
+<p class="text-gray-400 text-sm mt-6">Ouvert tous les soirs de 19h à 6h</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-8 px-4 bg-black/90 text-gray-500 text-xs">
+<div class="container mx-auto max-w-lg">
+<div class="text-center mb-4">
+<p class="font-['Pacifico'] text-primary text-lg mb-2">Apéro de Nuit 66</p>
+<p>Livraison d'alcool à Perpignan et environs</p>
+</div>
+<div class="flex justify-center space-x-4 mb-6">
+<a href="#" class="hover:text-primary modal-trigger" data-modal="legal">Mentions légales</a>
+<span>|</span>
+<a href="#" class="hover:text-primary modal-trigger" data-modal="cgv">CGV</a>
+<span>|</span>
+<a href="#" class="hover:text-primary modal-trigger" data-modal="privacy">Politique de confidentialité</a>
+</div>
+<!-- Modals -->
+<div id="legalModal" class="fixed inset-0 bg-black/90 z-50 hidden">
+<div class="bg-secondary rounded-lg max-w-lg mx-auto mt-20 p-6 max-h-[80vh] overflow-y-auto relative">
+<button class="absolute top-4 right-4 text-gray-400 hover:text-white modal-close">
+<i class="ri-close-line ri-2x"></i>
+</button>
+<h3 class="text-primary font-['Pacifico'] text-2xl mb-6">Mentions Légales</h3>
+<div class="text-gray-300 space-y-4 text-sm">
+<p><strong>Apéro de Nuit 66</strong><br>
+SARL <br>
+Immatriculation RCS : 879 976 099<br>
+SIRET : 953 976 099 00010</p>
+<p><strong>Créateur du site :</strong><br>
+Hauviller Steven</p>
+<p><strong>Contact :</strong><br>
+Téléphone : 06 52 33 64 61<br>
+Email : apero.nuit.du.66@gmail.com</p>
+<p><strong>Hébergement :</strong><br>
+Github, Inc<br>
+88 Colin P. Kelly Jr. Street</p>
+San Francisco, CA 94107, USA</p>
+</div>
+</div>
+</div>
+<div id="privacyModal" class="fixed inset-0 bg-black/90 z-50 hidden">
+<div class="bg-secondary rounded-lg max-w-lg mx-auto mt-20 p-6 max-h-[80vh] overflow-y-auto relative">
+<button class="absolute top-4 right-4 text-gray-400 hover:text-white modal-close">
+<i class="ri-close-line ri-2x"></i>
+</button>
+<h3 class="text-primary font-['Pacifico'] text-2xl mb-6">Politique de Confidentialité</h3>
+<div class="text-gray-300 space-y-4 text-sm">
+<p>Chez Apéro de Nuit 66, nous accordons une grande importance à la protection de vos données personnelles.</p>
+<p><strong>Données collectées :</strong><br>
+Nous ne collectons que les informations strictement nécessaires à la livraison de votre commande :</p>
+<ul class="list-disc pl-4 mb-4">
+<li>Nom et prénom</li>
+<li>Adresse de livraison</li>
+<li>Numéro de téléphone</li>
+</ul>
+<p><strong>Utilisation des cookies :</strong><br>
+Notre site n'utilise pas de cookies.</p>
+<p><strong>Conservation des données :</strong><br>
+Vos données sont conservées 3 ans et peuvent nous servir à des fins marqueting.</p>
+</div>
+</div>
+</div>
+<div id="cgvModal" class="fixed inset-0 bg-black/90 z-50 hidden">
+<div class="bg-secondary rounded-lg max-w-lg mx-auto mt-20 p-6 max-h-[80vh] overflow-y-auto relative">
+<button class="absolute top-4 right-4 text-gray-400 hover:text-white modal-close">
+<i class="ri-close-line ri-2x"></i>
+</button>
+<h3 class="text-primary font-['Pacifico'] text-2xl mb-6">Conditions Générales de Vente</h3>
+<div class="text-gray-300 space-y-4 text-sm">
+<p><strong>Article 1 - Objet</strong><br>
+Les présentes conditions régissent la vente et la livraison d'alcool par Apéro de Nuit 66.</p>
+<p><strong>Article 2 - Commandes</strong><br>
+Commande minimum de 25€. Livraison dans un rayon de 30 km autour de Perpignan.</p>
+<p><strong>Article 3 - Vérification de l'âge</strong><br>
+La vente d'alcool aux mineurs est strictement interdite. Une pièce d'identité peut etre demandée à la livraison.</p>
+<p><strong>Article 4 - Paiement</strong><br>
+Paiement à la livraison par carte bancaire ou espèces.</p>
+<p><strong>Article 5 - Livraison</strong><br>
+Délai de livraison : 30 minutes environ dans la zone de livraison.</p>
+<p><strong>Article 6 - Responsabilité</strong><br>
+Apéro de Nuit 66 se réserve le droit de refuser une livraison si le client présente des signes d'ébriété manifeste.</p>
+</div>
+</div>
+</div>
+<p class="text-center">© 2025 Apéro de Nuit 66 - L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+</div>
+</footer>
+<!-- Bottom Tab Bar -->
+<nav class="fixed bottom-0 w-full bg-black/90 border-t border-gray-800 z-50">
+<div class="grid grid-cols-5 h-16">
+<a href="#" class="flex flex-col items-center justify-center text-gray-400 hover:text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-home-5-line"></i>
+</div>
+<span class="text-xs mt-1">Accueil</span>
+</a>
+<a href="#services" class="flex flex-col items-center justify-center text-gray-400 hover:text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-wine-line"></i>
+</div>
+<span class="text-xs mt-1">Services</span>
+</a>
+<a href="tel:+33652336461" class="flex flex-col items-center justify-center -mt-4">
+<div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center shadow-lg">
+<i class="ri-phone-fill ri-lg text-black"></i>
+</div>
+<span class="text-xs mt-1 text-primary font-semibold">Appeler</span>
+</a>
+<a href="#delivery" class="flex flex-col items-center justify-center text-gray-400 hover:text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-truck-line"></i>
+</div>
+<span class="text-xs mt-1">Livraison</span>
+</a>
+<a href="#contact" class="flex flex-col items-center justify-center text-gray-400 hover:text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-customer-service-2-line"></i>
+</div>
+<span class="text-xs mt-1">Contact</span>
+</a>
+</div>
+</nav>
+<script id="mobileMenu">
+document.addEventListener('DOMContentLoaded', function() {
+const menuButton = document.querySelector('nav button');
+menuButton.addEventListener('click', function() {
+// Create mobile menu if it doesn't exist
+let mobileMenu = document.getElementById('mobileMenuOverlay');
+if (!mobileMenu) {
+mobileMenu = document.createElement('div');
+mobileMenu.id = 'mobileMenuOverlay';
+mobileMenu.className = 'fixed inset-0 bg-black/95 z-50 flex flex-col items-center justify-center';
+const closeButton = document.createElement('button');
+closeButton.className = 'absolute top-4 right-4 text-white w-10 h-10 flex items-center justify-center';
+closeButton.innerHTML = '<i class="ri-close-line ri-2x"></i>';
+const menuList = document.createElement('ul');
+menuList.className = 'text-center space-y-6';
+const menuItems = [
+{ text: 'Accueil', icon: 'ri-home-5-line', href: '#' },
+{ text: 'Nos Services', icon: 'ri-wine-line', href: '#services' },
+{ text: 'Livraison', icon: 'ri-truck-line', href: '#delivery' },
+{ text: 'Contact', icon: 'ri-customer-service-2-line', href: '#contact' }
+];
+menuItems.forEach(item => {
+const li = document.createElement('li');
+li.innerHTML = `
+<a href="${item.href}" class="flex flex-col items-center text-white hover:text-primary menu-link">
+<i class="${item.icon} ri-xl mb-2"></i>
+<span class="text-lg">${item.text}</span>
+</a>
+`;
+menuList.appendChild(li);
+});
+// Add click event listeners to menu links
+mobileMenu.addEventListener('click', function(e) {
+if (e.target.closest('.menu-link')) {
+e.preventDefault();
+const href = e.target.closest('.menu-link').getAttribute('href');
+if (href === '#') return;
+const targetElement = document.querySelector(href);
+if (targetElement) {
+mobileMenu.remove();
+document.body.style.overflow = '';
+window.scrollTo({
+top: targetElement.offsetTop - 70,
+behavior: 'smooth'
+});
+}
+}
+});
+// Add call button
+const callButton = document.createElement('div');
+callButton.className = 'mt-10';
+callButton.innerHTML = `
+<a href="tel:+33652336461" class="bg-primary text-black font-bold py-3 px-8 rounded-button inline-flex items-center space-x-2">
+<i class="ri-phone-fill"></i>
+<span>Appelez-nous</span>
+</a>
+`;
+mobileMenu.appendChild(closeButton);
+mobileMenu.appendChild(menuList);
+mobileMenu.appendChild(callButton);
+document.body.appendChild(mobileMenu);
+// Prevent scrolling when menu is open
+document.body.style.overflow = 'hidden';
+closeButton.addEventListener('click', function() {
+mobileMenu.remove();
+document.body.style.overflow = '';
+});
+} else {
+mobileMenu.remove();
+document.body.style.overflow = '';
+}
+});
+});
+</script>
+<script id="smoothScroll">
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+// Close mobile menu if open
+const mobileMenu = document.getElementById('mobileMenuOverlay');
+if (mobileMenu) {
+mobileMenu.remove();
+document.body.style.overflow = '';
+}
+window.scrollTo({
+top: targetElement.offsetTop - 70, // Adjust for header height
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+<script id="modalHandling">
+document.addEventListener('DOMContentLoaded', function() {
+// Create and show age verification modal on load
+const ageModal = document.createElement('div');
+ageModal.className = 'fixed inset-0 bg-black/95 z-[100] flex items-center justify-center px-4';
+ageModal.innerHTML = `
+<div class="bg-secondary rounded-lg max-w-md w-full p-6 text-center">
+<h3 class="text-primary font-['Pacifico'] text-2xl mb-6">Avertissement</h3>
+<div class="text-gray-300 space-y-4 mb-8">
+<p class="text-lg mb-6">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+<p class="text-sm">En entrant sur ce site, vous confirmez avoir 18 ans et acceptez que nous conservions votre adresse et numéro de téléphone pour la livraison.</p>
+</div>
+<div class="flex gap-4 justify-center">
+<button class="bg-green-600 text-white px-8 py-3 rounded-button hover:bg-green-700 transition-all" id="acceptAge">Accepter</button>
+<a href="https://www.google.com" class="bg-red-600 text-white px-8 py-3 rounded-button hover:bg-red-700 transition-all">Refuser</a>
+</div>
+</div>
+`;
+document.body.appendChild(ageModal);
+document.body.style.overflow = 'hidden';
+document.getElementById('acceptAge').addEventListener('click', function() {
+ageModal.remove();
+document.body.style.overflow = '';
+});
+const modalTriggers = document.querySelectorAll('.modal-trigger');
+const modalCloseButtons = document.querySelectorAll('.modal-close');
+function openModal(modalId) {
+const modal = document.getElementById(modalId + 'Modal');
+if (modal) {
+modal.classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+}
+}
+function closeModal(modal) {
+modal.classList.add('hidden');
+document.body.style.overflow = '';
+}
+modalTriggers.forEach(trigger => {
+trigger.addEventListener('click', (e) => {
+e.preventDefault();
+const modalId = trigger.getAttribute('data-modal');
+openModal(modalId);
+});
+});
+modalCloseButtons.forEach(button => {
+button.addEventListener('click', () => {
+const modal = button.closest('[id$="Modal"]');
+closeModal(modal);
+});
+});
+document.addEventListener('click', (e) => {
+const modals = document.querySelectorAll('[id$="Modal"]');
+modals.forEach(modal => {
+if (e.target === modal) {
+closeModal(modal);
+}
+});
+});
+});
+</script>
+</body>
+</html>
+
