@@ -436,6 +436,23 @@ closeModal(modal);
 });
 });
 </script>
+  <!-- OneSignal Push Notifications -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "cd923b52-8af7-4d82-85c1-fce933c7da74",
+      // Optionnel : personnalise le bouton d'abonnement
+      notifyButton: {
+        enable: true, // Affiche un bouton d'abonnement sur ton site
+        position: 'bottom-right',
+        theme: 'default',
+      },
+      // Optionnel : autres paramètres ici
+    });
+  });
+</script>
 </body>
 </html>
 
