@@ -436,9 +436,7 @@ closeModal(modal);
 });
 });
 </script>
-  <!-- OneSignal Push Notifications -->
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
+  <script>
   window.OneSignalDeferred = window.OneSignalDeferred || [];
   OneSignalDeferred.push(async function(OneSignal) {
     await OneSignal.init({
@@ -453,5 +451,44 @@ closeModal(modal);
     });
   });
 </script>
+
+<!-- Désactiver le bouton natif AVANT le chargement du SDK -->
+<script>
+  window.OneSignal = window.OneSignal || [];
+  window.OneSignal.push(function() {
+    window.OneSignal.init({
+      appId: "cd923b52-8af7-4d82-85c1-fce933c7da74",
+      notifyButton: {
+        enable: false // désactiver le bouton par défaut
+      }
+    });
+  });
+</script>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" async></script>
+
+<!-- Bouton personnalisé centré -->
+<div id="onesignal-subscribe-button-container" class="fixed inset-0 z-[200] flex items-center justify-center bg-black/90">
+  <button id="custom-subscribe-button"
+          class="bg-green-600 text-white px-6 py-4 text-lg font-bold rounded-xl shadow-lg hover:bg-green-700 transition-all">
+    J'accepte les notifications
+  </button>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const customButton = document.getElementById("custom-subscribe-button");
+    const container = document.getElementById("onesignal-subscribe-button-container");
+
+    customButton.addEventListener("click", function () {
+      if (window.OneSignal) {
+        OneSignal.push(function () {
+          OneSignal.showSlidedownPrompt();
+        });
+      }
+      container.remove();
+    });
+  });
+</script>
+
 </body>
 </html>
